@@ -31,7 +31,7 @@ mongoose.connect(uri, {
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-//Rounting for microservice apis
+//Routing for microservice apis
 var route_users = require('./routes/routes-users'); 
 var route_products = require('./routes/routes-products');
 var route_cart = require('./routes/routes-cart'); 
