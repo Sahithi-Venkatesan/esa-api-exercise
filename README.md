@@ -14,7 +14,7 @@ Then you'll get server listening on port 3000 and the db connected to mongodb
 
 # Use postman to make REST api calls
 To add a user,
-A POST request to ``` localhost:3000/rest/v1/users ``` with
+A POST request to ``` localhost:3000/rest/v1/users ``` with a request body
 ```
 {
     "username":"sahithi",
@@ -48,7 +48,7 @@ Similarly, PUT request to ```localhost:3000/rest/v1/users/:username``` would upd
 And a DELETE request to  ```localhost:3000/rest/v1/users/:username``` would delete that specific user from the database
 
 To add a new product, 
-A POST request to ```localhost:3000/rest/v1/products``` with
+A POST request to ```localhost:3000/rest/v1/products``` with a request body
 ```
 {
     "productId": "12445dsd234",
@@ -104,7 +104,7 @@ To update a specific product, use a PUT request to ```localhost:3000/rest/v1/pro
 
 To delete a specific product, use a DELETE request to ```localhost:3000/rest/v1/product/:productId```
 
-To add items to the cart of a specific user, a PUT request to ```localhost:3000/rest/v1/users/:username/cart/:productID``` with
+To add items to the cart of a specific user, a PUT request to ```localhost:3000/rest/v1/users/:username/cart/:productID``` with a request body
 ```
 {
     "username":"sahithi",
