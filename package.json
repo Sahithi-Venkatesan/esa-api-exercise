@@ -1,0 +1,17 @@
+{
+  "name": "cart-microservice",
+  "version": "1.0.0",
+  "description": "ESA Assignment-2",
+  "main": "node server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sahithi Venkatesan",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.5"
+  }
+}
