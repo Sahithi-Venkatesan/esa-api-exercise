@@ -1,16 +1,16 @@
-# Sahithi Venkatesan - 18XJ1A0547
-## ESA Assignment - 2 
+# ESA Assignment - 2 
+## Sahithi Venkatesan - 18XJ1A0547
 # Cart Microservices
 ## Directions of Use:
-To install all the packages use this command after cloning the directory....
+To install all the related packages, use this command after cloning the directory....
 ```
     npm install
 ```
-To run the server...
+To start the server...
 ```
     npm start
 ```
-Then you'll get server listening on port 3000 and the db connected to mongodb
+Then you'll get server listening on port 3000 and a message saying that the db has been connected to Mongodb
 
 # Use postman to make REST api calls
 To add a user,
@@ -43,9 +43,9 @@ A GET request to ``` localhost:3000/rest/v1/users ``` would yield
     }
 ]
 ```
-Similarly, PUT request to ```localhost:3000/rest/v1/users/:username``` would update the users db.
+Similarly, PUT request to ```localhost:3000/rest/v1/users/{username}``` would update the users db.
 
-And a DELETE request to  ```localhost:3000/rest/v1/users/:username``` would delete that specific user from the database
+And a DELETE request to  ```localhost:3000/rest/v1/users/{username}``` would delete that specific user from the database
 
 To add a new product, 
 A POST request to ```localhost:3000/rest/v1/products``` with a request body
@@ -98,13 +98,13 @@ A GET request to ```localhost:3000/rest/v1/products``` would give a response of
     }
 ]
 ```
-To view a specific product based on productID, a GET request to ```localhost:3000/rest/v1/product/:productId``` would do
+To view a specific product based on productID, a GET request to ```localhost:3000/rest/v1/product/{productId}``` would do
 
-To update a specific product, use a PUT request to ```localhost:3000/rest/v1/product/:productId```
+To update a specific product, use a PUT request to ```localhost:3000/rest/v1/product/{productId}```
 
-To delete a specific product, use a DELETE request to ```localhost:3000/rest/v1/product/:productId```
+To delete a specific product, use a DELETE request to ```localhost:3000/rest/v1/product/{productId}```
 
-To add items to the cart of a specific user, a PUT request to ```localhost:3000/rest/v1/users/:username/cart/:productID``` with a request body
+To add items to the cart of a specific user, a PUT request to ```localhost:3000/rest/v1/users/{username}/cart/{productID}``` with a request body
 ```
 {
     "username":"sahithi",
@@ -128,7 +128,7 @@ would yield a response of
     "__v": 0
 }
 ```
-To view the list of items in the cart of a specific user, a GET request to ```localhost:3000/rest/v1/users/:username/cart``` would give a response of 
+To view the list of items in the cart of a specific user, a GET request to ```localhost:3000/rest/v1/users/{username}/cart``` would give a response of 
 ```
 [
     {
@@ -143,11 +143,14 @@ To view the list of items in the cart of a specific user, a GET request to ```lo
 ]
 ```
 
-To update cart of a specific user, use a PUT request to ```localhost:3000/rest/v1/users/:username/cart/:productId```
+To update cart of a specific user, use a PUT request to ```localhost:3000/rest/v1/users/{username}/cart/{productId}```
 
-To delete an item in the cart of a specific user, use a DELETE request to ```localhost:3000/rest/v1/users/:username/cart/:productId```
+To delete an item in the cart of a specific user, use a DELETE request to ```localhost:3000/rest/v1/users/{username}/cart/{productId}```
 
 Mongo DB atlas has been used for DB connection. 
+
+
+
 
 
 
