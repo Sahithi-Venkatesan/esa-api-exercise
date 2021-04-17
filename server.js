@@ -18,7 +18,7 @@ require("dotenv").config();
 
 //Db connection is through mongodb atlas
 const MongoClient = require('mongodb').MongoClient;
-const uri = "mongodb+srv://sahithi-cart-api:sahithi@cart-api.imgeq.mongodb.net/test?retryWrites=true&w=majority"; //process.env.MONGODB_URI;
+const uri = process.env.MONGODB_URI;
 mongoose.connect(uri, {
   useNewUrlParser: true,
   useUnifiedTopology: true

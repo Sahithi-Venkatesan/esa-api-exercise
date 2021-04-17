@@ -2,6 +2,13 @@
 ## Sahithi Venkatesan - 18XJ1A0547
 # Cart Microservices
 ## Directions of Use:
+Mongo DB atlas has been used for DB connection. 
+
+Place your mongodb connection string uri in the place holder provided in the ```.env``` file that exists in the root directory.
+
+Inorder to get this connection string, you can create an account at MongoDB atlas under the ```FREE``` plan set up your cluster
+
+
 To install all the related packages, use this command after cloning the directory....
 ```
     npm install
@@ -147,7 +154,6 @@ To update cart of a specific user, use a PUT request to ```localhost:3000/rest/v
 
 To delete an item in the cart of a specific user, use a DELETE request to ```localhost:3000/rest/v1/users/{username}/cart/{productId}```
 
-Mongo DB atlas has been used for DB connection. 
 
 
 
