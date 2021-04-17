@@ -1,21 +1,23 @@
-# ESA Assignment - 2 
+# Cart Microservice API
 ## Sahithi Venkatesan - 18XJ1A0547
-# Cart Microservices
-## Directions of Use:
+# ESA Assignment 2 - CS474 Enterprise Software Architecture
+## Directions for Use:
 Mongo DB atlas has been used for DB connection. 
 
 Place your mongodb connection string uri in the place holder provided in the ```.env``` file that exists in the root directory.
 
-Inorder to get this connection string, you can create an account at MongoDB atlas under the ```FREE``` plan set up your cluster
+Inorder to get this connection string, you can create an account at MongoDB atlas under the ```FREE``` plan set up your cluster!
 
 
-To install all the related packages, use this command after cloning the directory....
+To install all the related packages, use this command after cloning into the repository....
 ```
-    npm install
+   > cd esa-api-exercise
+
+   > npm install
 ```
-To start the server...
+To start the server, use...
 ```
-    npm start
+   > npm start
 ```
 Then you'll get server listening on port 3000 and a message saying that the db has been connected to Mongodb
 
